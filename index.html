@@ -7,14 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privont</title>
     <style type="text/css" data-type="vc_custom-css">
-     
       @media (max-width: 576px) {
-        .privontMap{
+        div#slide1 {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        .privontMap {
           padding-top: 20px;
         }
-        .lastSlide{
+        .lastSlide {
         }
-        .slide2Container{
+        .slide2Container {
           align-items: center !important;
           -webkit-align-items: center;
           padding-top: 60px;
@@ -76,16 +79,96 @@
         }
       }
 
-      @media (min-width:576px ) and ( max-width: 768px) {
-        .slide2Image{
-        height: 70px !important;
+      @media (min-width: 576px) and (max-width: 768px) {
+        div#slide1 {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
         }
-        .slide2Container{
+        .slide2Image {
+          height: 70px !important;
+        }
+        .slide2Container {
           align-items: center !important;
           -webkit-align-items: center !important;
           padding-top: 60px;
         }
-      
+      }
+      @media (min-width: 768px) {
+        .slide2Subtitle {
+          font-size: 32px !important;
+        }
+        .slide2Title {
+          font-size: 90px !important;
+        }
+        .slide1Desc {
+          font-size: 19px !important;
+        }
+        .slide1Inner {
+          padding: 0px 48px;
+          padding-top: 0px;
+        }
+      }
+      @media (min-width: 1600px) and (max-width: 8000px) {
+        #slide1 {
+          padding-left: 214px !important;
+          padding-right: 214px !important;
+        }
+      }
+
+      .slide2Shadow {
+      }
+
+      .slide2Container {
+        align-items: flex-start !important;
+        justify-content: center !important;
+        padding-top: 100px;
+      }
+
+      .slide1Shadow {
+        padding: 20px;
+        padding-bottom: 6px;
+        margin-bottom: 24px;
+        /* transition: all 1s ease-in-out; */
+        animation: fadeInAnimation ease-in-out 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        max-width: 645px;
+      }
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+          background-color: #283135ba;
+          box-shadow: 0px 0px 10px 10px #283135ba;
+        }
+      }
+      .slide1ShowAnimate {
+        background-color: #283135ba;
+        box-shadow: 0px 0px 10px 10px #283135ba;
+        transition: all 1s ease-in-out;
+      }
+      #slide1 {
+        background-color: #000;
+        /* padding-left: 214px !important;
+        padding-right: 214px !important; */
+        display: flex;
+        justify-content: center;
+      }
+      .slide1Inner {
+        padding-top: 40px;
+
+        height: 100%;
+        width: 100%;
+        background-image: url(./assets/uploads/2023/homepage.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        /* background-origin: content-box !important; */
+        background-color: #000;
+        display: flex;
+        align-items: center;
       }
       .slide2Image {
         height: 100px;
@@ -95,7 +178,13 @@
       }
 
       .slide2Heading {
-        margin-bottom: 20px;
+        padding: 10px;
+        font-family: "montserrat ultralight";
+        text-align: center;
+        animation: fadeInAnimation ease-in-out 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        max-width: 645px;
       }
 
       .slide2TextContainer {
@@ -114,7 +203,7 @@
         max-width: 832px;
       }
       .slide1divider {
-        margin-top: 30px;
+        margin-top: 16px;
       }
       .wpb_single_image .vc_single_image-wrapper {
         padding-top: 16px;
@@ -598,16 +687,12 @@
       .vc_custom_1579783990044 {
         margin-bottom: 0px !important;
         padding-bottom: 0px !important;
-        background-image: url(https://codex-themes.com/thegem/sites/app-landing/wp-content/uploads/2019/10/3.jpg) !important;
-
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
+        background-color: #000;
       }
       .vc_custom_1579783998755 {
         margin-bottom: 0px !important;
         padding-bottom: 0px !important;
-        background: url(./assets/uploads/2023/bg2.jpg) !important;
+        background: url(./assets/uploads/2023/membership.png) !important;
         background: transparent;
         background-position: center !important;
         background-repeat: no-repeat !important;
@@ -621,8 +706,7 @@
         top: 0px;
         left: 0px;
         opacity: 0.85;
-        background: linear-gradient(to bottom, #5e616f 0%, #121317 100%),
-          url(./assets/uploads/2023/bg2.jpg) !important;
+        background: url(./assets/uploads/2023/membership.png) !important;
 
         background-position: center !important;
         background-repeat: no-repeat !important;
@@ -632,7 +716,7 @@
       .vc_custom_1579784007241 {
         margin-bottom: 0px !important;
         padding-bottom: 0px !important;
-        background-color: #212121 !important;
+        background-image: url(./assets/uploads/2023/login.png) !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
@@ -640,7 +724,7 @@
       .vc_custom_1579871261440 {
         margin-bottom: 0px !important;
         padding-bottom: 0px !important;
-        background-image: url(https://codex-themes.com/thegem/sites/app-landing/wp-content/uploads/2019/10/15.jpg) !important;
+        background-image: url(./assets/uploads/2023/login.png) !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
@@ -699,6 +783,7 @@
         padding-bottom: 0px !important;
       }
       .vc_custom_1570197406340 {
+        max-width: 750px;
         margin-top: 0px !important;
         margin-bottom: 0px !important;
         padding-top: 0px !important;
@@ -799,6 +884,105 @@
       .vc_custom_1579177035889 {
         margin-bottom: 0px !important;
         padding-bottom: 0px !important;
+      }
+      @keyframes shine {
+        0% {
+          transform: translateX(-100%) translateY(-100%) rotate(30deg);
+        }
+        80% {
+          transform: translateX(-100%) translateY(-100%) rotate(30deg);
+        }
+        100% {
+          transform: translateX(100%) translateY(100%) rotate(30deg);
+        }
+      }
+
+      .wrapper {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+      }
+
+      @-webkit-keyframes shine {
+        0% {
+          transform: translateX(-100%) translateY(-100%) rotate(30deg);
+        }
+        80% {
+          transform: translateX(-100%) translateY(-100%) rotate(30deg);
+        }
+        100% {
+          transform: translateX(100%) translateY(100%) rotate(30deg);
+        }
+      }
+      @keyframes shine {
+        0% {
+          transform: translateX(-100%) translateY(-100%) rotate(30deg);
+        }
+        80% {
+          transform: translateX(-100%) translateY(-100%) rotate(30deg);
+        }
+        100% {
+          transform: translateX(100%) translateY(100%) rotate(30deg);
+        }
+      }
+      .wrapper {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+      }
+
+      .box--gradient {
+        display: flex;
+        margin: 0 10px;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+      }
+      .box--gradient p {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        flex-grow: 1;
+        margin: 0;
+        font-size: 30px;
+      }
+      .box--gradient:after {
+        content: "";
+        top: 0;
+        transform: translateX(100%) rotate(30deg);
+        width: 300%;
+        height: 300%;
+        position: absolute;
+        z-index: 1;
+        -webkit-animation: shine 1s infinite ease-in;
+        animation: shine 1s infinite ease-in;
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.8) 50%,
+          rgba(128, 186, 232, 0) 99%,
+          rgba(128, 186, 232, 0) 100%
+        );
+      }
+      .box--gradient.silver {
+        background: linear-gradient(to right, #bcc6cc, #eee, #bcc6cc);
+      }
+      .box--gradient.gold {
+        background: linear-gradient(to bottom, #c39738, #deb761, #c39738);
+      }
+      .box--gradient.gold:after {
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+      }
+      .box--gradient.platinum {
+        background: linear-gradient(to bottom, #d5d7e5, #eee, #d5d7e5);
+      }
+      .box--gradient.platinum:after {
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
       }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -1169,8 +1353,6 @@
               elementMarginLeft +
               elementMarginRight;
             0 > paddingRight && (paddingRight = 0);
-            element.style.paddingLeft = padding + "px";
-            element.style.paddingRight = paddingRight + "px";
           }
         }
 
@@ -1266,7 +1448,8 @@
                           data-vc-full-width="true"
                           data-vc-full-width-init="false"
                           data-tooltip="Privont App"
-                          class="vc_row wpb_row vc_row-fluid scroller-block parallax-content vc_custom_1579783990044 vc_row-has-fill vc_row-o-content-middle vc_row-flex"
+                          class="scroller-block"
+                          style="padding: 0px !important"
                         >
                           <script type="text/javascript">
                             if (
@@ -1277,132 +1460,94 @@
                               );
                             }
                           </script>
-                          <div
-                            class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-7 vc_col-md-7"
-                          >
+                          <div class="slide1Inner" style="">
                             <div
-                              class="vc_column-inner vc_custom_1570199445501"
+                              class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-8 vc_col-md-8"
                             >
-                              <div class="wpb_wrapper">
-                                <div
-                                  class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1579161660527"
-                                >
-                                  <div class="wpb_wrapper">
-                                    <div class="title-h1">
-                                      <span class="light">
-                                        A Private Members Club
-                                      </span>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_fadeInLeft fadeInLeft vc_custom_1579161560118"
-                                >
-                                  <div class="wpb_wrapper">
-                                    <div
-                                      class="title-xlarge"
-                                      style="
-                                        font-family: Cinzel;
-                                        font-weight: 400;
-                                      "
-                                    >
-                                      Privont
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="clearboth"></div>
-                                <div class="gem-divider slide1divider"></div>
-                                <div
-                                  class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_fadeInRight fadeInRight"
-                                >
-                                  <div class="wpb_wrapper">
-                                    <div
-                                      class="styled-subtitle"
-                                      style="display: block; max-width: 550px"
-                                    >
-                                      Application for membership requires a
-                                      nomination from a current Privont member.
-                                      A nomination is obligatory for membership,
-                                      but it does not bestow acceptance.
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="clearboth"></div>
-                                <div
-                                  class="gem-divider"
-                                  style="margin-top: 50px"
-                                ></div>
-                                <div
-                                  class="vc_row wpb_row vc_inner vc_row-fluid"
-                                >
+                              <div
+                                class="vc_column-inner vc_custom_1570199445501"
+                              >
+                                <div class="wpb_wrapper slide1Shadow">
                                   <div
-                                    class="wpb_animate_when_almost_visible fadeInDown wpb_column vc_column_container vc_col-sm-12"
+                                    class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1579161660527"
                                   >
-                                    <div class="vc_column-inner">
+                                    <div class="wpb_wrapper">
+                                      <div class="title-h1">
+                                        <span class="light slide2Subtitle">
+                                          A Private Members Club
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_fadeInLeft fadeInLeft vc_custom_1579161560118"
+                                  >
+                                    <div class="wpb_wrapper">
                                       <div
-                                        style="margin-bottom: 16px"
-                                        class="vc_hidden-xs"
+                                        class="title-xlarge slide2Title"
+                                        style="
+                                          font-family: Cinzel;
+                                          font-weight: 400;
+                                        "
                                       >
-                                        <a class="membersLoginBtn" href="#">
-                                          MEMBERS LOGIN
-                                        </a>
-                                      </div>
-                                      <div class="storeBtnContainer">
-                                        <a href="#" class="appleStore">
-                                          <img
-                                            src="./assets/themes/privont/images/appstore.png"
-                                            width="190px"
-                                          />
-                                        </a>
-                                        <a href="#" class="googleStore">
-                                          <img
-                                            src="./assets/themes/privont/images/googlestore.png"
-                                            width="210px"
-                                          />
-                                        </a>
+                                        Privont
                                       </div>
                                     </div>
                                   </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="wpb_animate_when_almost_visible wpb_fadeInDown fadeInDown wpb_column vc_column_container vc_col-sm-12 vc_col-lg-5 vc_col-md-5 vc_hidden-sm vc_hidden-xs vc_col-has-fill"
-                          >
-                            <div
-                              class="vc_column-inner vc_custom_1579264936683"
-                            >
-                              <div class="wpb_wrapper">
-                                <div
-                                  class="wpb_raw_code wpb_content_element wpb_raw_html"
-                                >
-                                  <div class="wpb_wrapper">
-                                    <script
-                                      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"
-                                      integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
-                                      crossorigin="anonymous"
-                                      referrerpolicy="no-referrer"
-                                    ></script>
+                                  <div class="clearboth"></div>
+                                  <div class="gem-divider slide1divider"></div>
+                                  <div
+                                    class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_fadeInRight fadeInRight"
+                                  >
+                                    <div class="wpb_wrapper">
+                                      <div
+                                        class="styled-subtitle slide1Desc"
+                                        style="display: block; max-width: 550px"
+                                      >
+                                        Application for membership requires a
+                                        nomination from a current Privont
+                                        member. A nomination is obligatory for
+                                        membership, but it does not bestow
+                                        acceptance.
+                                      </div>
+                                    </div>
                                   </div>
-                                </div>
-                                <div
-                                  class="wpb_single_image wpb_content_element vc_align_center image-7"
-                                >
-                                  <figure class="wpb_wrapper vc_figure">
+                                  <div class="clearboth"></div>
+                                  <div
+                                    class="gem-divider"
+                                    style="margin-top: 24px"
+                                  ></div>
+                                  <div
+                                    class="vc_row wpb_row vc_inner vc_row-fluid"
+                                  >
                                     <div
-                                      class="vc_single_image-wrapper vc_box_border_grey"
+                                      class="wpb_animate_when_almost_visible fadeInDown wpb_column vc_column_container vc_col-sm-12"
                                     >
-                                      <img
-                                        style="object-fit: contain"
-                                        width="300"
-                                        height="622"
-                                        src="assets/uploads/2023/phone1.png"
-                                        class="vc_single_image-img attachment-full"
-                                        alt=""
-                                      />
+                                      <div class="vc_column-inner">
+                                        <div class="vc_hidden-xs">
+                                          <a class="membersLoginBtn" href="#">
+                                            MEMBERS LOGIN
+                                          </a>
+                                        </div>
+                                      </div>
                                     </div>
-                                  </figure>
+                                  </div>
+                                </div>
+                                <div
+                                  class="storeBtnContainer wpb_animate_when_almost_visible wpb_fadeInUp fadeInDown"
+                                >
+                                  <a href="#" class="appleStore">
+                                    <img
+                                      src="./assets/themes/privont/images/appstore.png"
+                                      width="190px"
+                                    />
+                                  </a>
+                                  <a href="#" class="googleStore">
+                                    <img
+                                      src="./assets/themes/privont/images/googlestore.png"
+                                      width="210px"
+                                    />
+                                  </a>
                                 </div>
                               </div>
                             </div>
@@ -1438,25 +1583,12 @@
                                   class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1579161906108"
                                 >
                                   <div class="wpb_wrapper">
-                                    <div
-                                      class="title-h1 slide2Heading"
-                                      style="text-align: center"
-                                    >
-                                      <span class="light" style="color: #fff">
-                                        The App Is Available For
-                                      </span>
-                                    </div>
-                                    <div class="slide2TextContainer">
-                                      <span
-                                        class="light slide2Text"
-                                        style="color: #fff"
-                                      >
-                                        Hand-selected group of localized
-                                        individuals who harness the powerful
-                                        resources of the extraordinary members
-                                        elite professional’s premier network.
-                                      </span>
-                                    </div>
+                                    <p class="slide2Heading">
+                                      Hand-selected group of localized
+                                      individuals who harness the powerful
+                                      resources of the extraordinary members
+                                      elite professional’s premier network.
+                                    </p>
                                   </div>
                                 </div>
                                 <div class="clearboth"></div>
@@ -1469,127 +1601,7 @@
                                   class="gem-divider show-on-laptop"
                                   style="margin-top: 50px"
                                 ></div>
-                                <div
-                                  class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1570440993284"
-                                >
-                                  <div
-                                    class="wpb_animate_when_almost_visible fadeInRight wpb_column vc_column_container vc_col-sm-4 vc_col-lg-4 vc_col-md-4 vc_col-xs-6"
-                                  >
-                                    <div class="vc_column-inner">
-                                      <div class="wpb_wrapper">
-                                        <div
-                                          class="centered-box gem-image-centered-box"
-                                        >
-                                          <div
-                                            class="gem-image gem-wrapbox gem-wrapbox-style-default gem-wrapbox-position-centered"
-                                          >
-                                            <div class="gem-wrapbox-inner">
-                                              <img
-                                                class="gem-wrapbox-element slide2Image img-responsive"
-                                                src="assets/uploads/2023/laptop.png"
-                                                alt=""
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_fadeInRight fadeInRight"
-                                        >
-                                          <div class="wpb_wrapper">
-                                            <div
-                                              class="title-h5"
-                                              style="text-align: center"
-                                            >
-                                              <span style="color: #fff">
-                                                PC
-                                              </span>
-                                            </div>
-                                          </div>
-                                        </div>
 
-                                        <div class="clearboth"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="wpb_animate_when_almost_visible fadeInUp wpb_column vc_column_container vc_col-sm-4 vc_col-lg-4 vc_col-md-4 vc_col-xs-6"
-                                  >
-                                    <div class="vc_column-inner">
-                                      <div class="wpb_wrapper">
-                                        <div
-                                          class="centered-box gem-image-centered-box"
-                                        >
-                                          <div
-                                            class="gem-image gem-wrapbox gem-wrapbox-style-default gem-wrapbox-position-centered"
-                                          >
-                                            <div class="gem-wrapbox-inner">
-                                              <img
-                                                class="gem-wrapbox-element slide2Image img-responsive"
-                                                src="assets/uploads/2023/tablet.png"
-                                                alt=""
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp"
-                                        >
-                                          <div class="wpb_wrapper">
-                                            <div
-                                              class="title-h5"
-                                              style="text-align: center"
-                                            >
-                                              <span style="color: #fff">
-                                                Tablet
-                                              </span>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="clearboth"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="wpb_animate_when_almost_visible fadeInLeft custom wpb_column vc_column_container vc_col-sm-4"
-                                  >
-                                    <div class="vc_column-inner">
-                                      <div class="wpb_wrapper">
-                                        <div
-                                          class="centered-box gem-image-centered-box"
-                                        >
-                                          <div
-                                            class="gem-image gem-wrapbox gem-wrapbox-style-default gem-wrapbox-position-centered"
-                                          >
-                                            <div class="gem-wrapbox-inner">
-                                              <img
-                                                height="100"
-                                                class="gem-wrapbox-element slide2Image img-responsive"
-                                                src="assets/uploads/2023/phone.png"
-                                                alt=""
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_fadeInLeft fadeInLeft"
-                                        >
-                                          <div class="wpb_wrapper">
-                                            <div
-                                              class="title-h5"
-                                              style="text-align: center"
-                                            >
-                                              <span style="color: #fff">
-                                                Smartphone
-                                              </span>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div class="clearboth"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
                                 <div
                                   class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1579173959485"
                                 >
@@ -1598,45 +1610,123 @@
                                   >
                                     <div
                                       class="vc_column-inner vc_custom_1579175855085"
-                                    >
-                                      <div class="wpb_wrapper">
-                                        <div class="clearboth"></div>
-                                        <div
-                                          class="gem-divider show-on-desctop"
-                                          style="margin-top: 40px"
-                                        ></div>
-                                        <div
-                                          class="centered-box gem-image-centered-box"
-                                        >
-                                          <div
-                                            class="gem-image gem-wrapbox gem-wrapbox-style-default gem-wrapbox-position-centered"
-                                            style=""
-                                          >
-                                            <div class="gem-wrapbox-inner">
-                                              <img
-                                                height="100"
-                                                class="gem-wrapbox-element img-responsive"
-                                                src="assets/uploads/2023/phone2.png"
-                                                alt=""
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="clearboth"></div>
-                                        <div
-                                          class="gem-divider"
-                                          style="margin-top: -30px"
-                                        ></div>
-                                        <div class="clearboth"></div>
-                                        <div
-                                          class="gem-divider show-on-laptop"
-                                          style="margin-top: -50px"
-                                        ></div>
-                                      </div>
-                                    </div>
+                                    ></div>
                                   </div>
                                 </div>
                               </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="vc_row-full-width vc_clearfix"></div>
+                        <div class="vc_row-full-width-before"></div>
+                        <div
+                          id="slide3"
+                          data-vc-full-width="true"
+                          data-vc-full-width-init="false"
+                          data-tooltip="Cross-Device"
+                          class=" vc_row wpb_row vc_row-fluid scroller-block vc_custom_1579784007241 vc_row-has-fill vc_row-o-content-bottom vc_row-flex"
+                        >
+                          <script type="text/javascript">
+                            if (
+                              typeof gem_fix_fullwidth_position == "function"
+                            ) {
+                              gem_fix_fullwidth_position(
+                                document.getElementById("slide3")
+                              );
+                            }
+                          </script>
+                          <div class="slide3bg"></div>
+                          <div
+                            class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-12 vc_col-md-12 slide3Container"
+                            style="align-items: center; justify-content: center"
+                          >
+                            <div
+                              style="
+                                background-color: #000000b0;
+                                border: 1px solid #fff9;
+                                box-shadow: 0px 0px 2px 0px #000;
+                                border-radius: 10px;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 12px;
+                                padding: 16px;
+                                padding-top: 20px;
+                                width: 100%;
+                                max-width: 312px;
+                              "
+                            >
+                              <h1
+                                style="
+                                  font-size: 32px;
+                                  margin-bottom: 0px;
+                                  font-family: Cinzel;
+                                  text-align: center;
+                                "
+                              >
+                                Login
+                              </h1>
+                              <input
+                                name="username"
+                                placeholder="Username"
+                                style="
+                                  border-radius: 10px;
+                                  border: none;
+                                  padding: 6px;
+                                  color: #000;
+                                  padding-left: 12px;
+                                "
+                              />
+                              <input
+                                name="password"
+                                placeholder="Password"
+                                style="
+                                  border-radius: 10px;
+                                  border: none;
+                                  padding: 6px;
+                                  color: #000;
+                                  padding-left: 12px;
+                                "
+                              />
+                              <div
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 8px;
+                                "
+                              >
+                                <input
+                                  type="checkbox"
+                                  id="rememberMe"
+                                  name="rememberMe"
+                                />
+                                <label for="rememberMe">Remember me</label>
+                              </div>
+
+                              <button
+                                style="
+                                  font-family: montserrat;
+                                  font-weight: 500;
+                                  padding: 12px;
+                                  color: #000;
+                                  border-radius: 12px;
+                                  background: linear-gradient(
+                                    45deg,
+                                    #999 5%,
+                                    #fff 10%,
+                                    #ccc 30%,
+                                    #ddd 50%,
+                                    #ccc 70%,
+                                    #fff 80%,
+                                    #999 95%
+                                  );
+                                "
+                              >
+                                Login
+                              </button>
+                              <a href="#" style="color: #fff">
+                                Forgot Password?
+                              </a>
                             </div>
                           </div>
                         </div>
@@ -1693,6 +1783,7 @@
                           </div>
                         </div>
                         <div class="vc_row-full-width vc_clearfix"></div>
+                        <div class="vc_row-full-width-before"></div>
                       </div>
                     </div>
                   </article>
@@ -1772,35 +1863,7 @@
         showCurrentLabel: "Show this page",
       };
     </script>
-    <script type="text/javascript">
-      (function ($) {
-        $(document).ready(function () {
-          var timeout;
-          $(".parallax-content").mousemove(function (e) {
-            if (timeout) clearTimeout(timeout);
-            setTimeout(callParallax.bind(null, e), 20);
-          });
 
-          function callParallax(e) {
-            parallaxIt(e, ".image-7 img", 25);
-            parallaxIt(e, ".animated-image-5 img", 10);
-            parallaxIt(e, ".animated-image-6 img", -18);
-          }
-
-          function parallaxIt(e, target, movement) {
-            var $this = $(".parallax-content");
-            var relX = e.pageX - $this.offset().left;
-            var relY = e.pageY - $this.offset().top;
-
-            TweenMax.to(target, 1, {
-              x: ((relX - $this.width() / 2) / $this.width()) * movement,
-              y: ((relY - $this.height() / 2) / $this.height()) * movement,
-              ease: Power2.easeOut,
-            });
-          }
-        });
-      })(jQuery);
-    </script>
     <script
       type="text/javascript"
       src="assets/themes/privont/js/thegem-menu_init03ec.js?ver=5.3.4"
